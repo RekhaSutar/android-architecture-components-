@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/fragEdit"
+        android:name="com.rekha.poc.mvvm.EditFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/default_margin_min"
+        android:layout_weight="1" />
+
+
+    <fragment
+        android:id="@+id/fragDisplay"
+        android:name="com.rekha.poc.mvvm.DisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/default_margin_min"
+        android:layout_weight="1" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_weight="0.1"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/cardview_default_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/default_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/default_title_text_size"
+                android:gravity="center_vertical"
+                android:text="@string/label_total_employee_count" />
+
+            <TextView
+                android:id="@+id/tv_employee_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                tools:text="1" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

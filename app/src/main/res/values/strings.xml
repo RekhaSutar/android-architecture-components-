@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MVVM</string>
+
+
+    <string name="label_employee_name">Employee Name</string>
+    <string name="label_employee_code">Employee Code</string>
+    <string name="label_employee_details_save">Save</string>
+
+    <string name="error_employee_name_empty">Please enter employee name</string>
+    <string name="error_employee_code_empty">Please enter employee code</string>
+    <string name="label_add_employee_details">Add Employee Details</string>
+    <string name="label_total_employee_count">Total Employee Count :</string>
+    <string name="error_employee_already_exists">Employee already exists</string>
+</resources>
